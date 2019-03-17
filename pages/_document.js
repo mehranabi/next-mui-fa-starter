@@ -8,7 +8,7 @@ class MyDocument extends Document {
     const { pageContext } = this.props
 
     return (
-      <html lang="en" dir="ltr">
+      <html lang="fa" dir="rtl">
         <Head>
           <meta charSet="utf-8" />
           <meta
@@ -25,6 +25,8 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
+          <link rel="stylesheet" href="/static/fonts/vazir/vazir-fd.css" />
+          <link rel="stylesheet" href="/static/styles/app.css" />
         </Head>
         <body>
           <Main />

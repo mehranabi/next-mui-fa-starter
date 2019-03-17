@@ -23,13 +23,10 @@ class MyApp extends App {
     const { Component, pageProps } = this.props
     return (
       <Container>
-        <Head>
-          <link rel="stylesheet" href="/static/fonts/vazir/vazir.css" />
-          <link rel="stylesheet" href="/static/styles/app.css" />
-        </Head>
         <JssProvider
           registry={this.pageContext.sheetsRegistry}
           generateClassName={this.pageContext.generateClassName}
+          jss={this.pageContext.jss}
         >
           <MuiThemeProvider
             theme={this.pageContext.theme}

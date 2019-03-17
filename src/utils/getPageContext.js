@@ -1,7 +1,9 @@
-import { SheetsRegistry } from 'jss'
+import { SheetsRegistry, create } from 'jss'
+import rtl from 'jss-rtl'
 import {
   createMuiTheme,
   createGenerateClassName,
+  jssPreset,
 } from '@material-ui/core/styles'
 import blue from '@material-ui/core/colors/blue'
 import green from '@material-ui/core/colors/green'
@@ -23,7 +25,10 @@ const theme = createMuiTheme({
     useNextVariants: true,
     fontFamily: "'Vazir', 'Roboto', sans-serif",
   },
+  direction: 'rtl',
 })
+
+const jss = create({ plugins: [...jssPreset().plugins, rtl()] })
 
 function createPageContext() {
   return {
@@ -31,6 +36,7 @@ function createPageContext() {
     sheetsManager: new Map(),
     sheetsRegistry: new SheetsRegistry(),
     generateClassName: createGenerateClassName(),
+    jss,
   }
 }
 
