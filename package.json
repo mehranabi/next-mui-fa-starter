@@ -1,7 +1,7 @@
 {
-  "name": "trade-room-nextjs",
+  "name": "next-mui-fa-starter",
   "version": "1.0.0",
-  "description": "Trade Room web application, created by ReactJs",
+  "description": "A starter for your new project with ReactJs + NextJs + Material-UI + Vazir font (Farsi - Persian)",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -10,19 +10,23 @@
     "analyze": "cross-env ANALYZE=1 next build"
   },
   "keywords": [
-    "gold",
     "react",
     "reactjs",
     "next",
     "nextjs",
-    "trade",
-    "tradegold"
+    "material",
+    "material-ui",
+	"vazir",
+	"persian",
+	"farsi",
+	"auth",
+	"authentication"
   ],
   "author": {
     "name": "Mehran Abghari",
     "email": "mehran.ab80@gmail.com"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
