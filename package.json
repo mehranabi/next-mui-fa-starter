@@ -1,0 +1,46 @@
+{
+  "name": "trade-room-nextjs",
+  "version": "1.0.0",
+  "description": "Trade Room web application, created by ReactJs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "analyze": "cross-env ANALYZE=1 next build"
+  },
+  "keywords": [
+    "gold",
+    "react",
+    "reactjs",
+    "next",
+    "nextjs",
+    "trade",
+    "tradegold"
+  ],
+  "author": {
+    "name": "Mehran Abghari",
+    "email": "mehran.ab80@gmail.com"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "@zeit/next-css": "^1.0.1",
+    "formik": "^1.5.1",
+    "formik-material-ui": "^0.0.16",
+    "jss": "^9.8.7",
+    "next": "^8.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-jss": "^8.6.1",
+    "url-loader": "^1.1.2",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "webpack-bundle-analyzer": "^3.1.0"
+  }
+}
